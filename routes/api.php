@@ -24,3 +24,9 @@ Route::get('believe/chapters', 'ChapterController@index');
 Route::get('believe/verses', 'VerseController@index');
 Route::get('believe/spirit_prophecy_chapter', 'SpiritProphecyController@index');
 
+
+Route::get('api/believe/book_languages', 'BelieveController@index');
+Route::get('api/believe/chapters', 'ChapterController@index');
+Route::get('api/believe/verses', 'VerseController@index');
+Route::get('api/believe/spirit_prophecy_chapter', 'SpiritProphecyController@index');
+
