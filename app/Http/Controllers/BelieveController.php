@@ -29,8 +29,11 @@ class BelieveController extends Controller
         $start_date = $request->start_date?$request->start_date:'';
 
         $return = array();
-        $data = \DB::select("SELECT * FROM
+        $data = \DB::select("SELECT br.* , 
+        bb.book_order as book
+         FROM
          bhp.bible_read br 
+         inner join bhp.believe_book bb on bb.id=br.book_id
          where 
          start_date = '$start_date' "
         );
