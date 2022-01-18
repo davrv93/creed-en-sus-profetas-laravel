@@ -32,7 +32,7 @@ class ChapterController extends Controller
          inner join bhp.believe_book bb on bb.id=br.book_id
          where 
          bb.book_order = '$book' 
-         and bb.start_chapter = '$chapter'
+         and br.start_chapter = '$chapter'
          "
         );
         $return=$data;
