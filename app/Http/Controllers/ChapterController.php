@@ -35,7 +35,7 @@ class ChapterController extends Controller
          and br.start_chapter = '$chapter'
          "
         );
-        $return=$data;
+        $return['results']=$data;
         return  \Response::json($return, 201); // Status code here
     }
 }
