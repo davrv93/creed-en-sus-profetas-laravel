@@ -12,6 +12,7 @@ class ChapterController extends Controller
         $book = $request->book?$request->book:'';
         $code_iso = $request->code_iso?$request->code_iso:'';
         $chapter = $request->chapter?$request->chapter:'';
+        $start_date = $request->start_date?$request->start_date:'';
 
         $return = array();
         /*$data = \DB::select("select bbl.* from 
