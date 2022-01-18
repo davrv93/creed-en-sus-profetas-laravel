@@ -14,7 +14,7 @@ class SpiritProphecyController extends Controller
       
         $return=[
             [
-                "archivo"=>'http://198.199.78.59/files/lectura.pdf'
+                "archivo"=>'http://198.199.78.59/filesd/lectura.pdf'
             ]
         ];
         return  \Response::json($return,
