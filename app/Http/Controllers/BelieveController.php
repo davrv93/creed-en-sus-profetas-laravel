@@ -37,7 +37,7 @@ class BelieveController extends Controller
          where 
          start_date = '$start_date' "
         );
-        $return=$data[0];
+        $return=$data;
         return  \Response::json($return, 201); // Status code here
 
         
