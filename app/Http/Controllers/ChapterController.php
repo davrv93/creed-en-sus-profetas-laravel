@@ -14,7 +14,7 @@ class ChapterController extends Controller
         $chapter = $request->chapter?$request->chapter:'';
 
         $return = array();
-        $data = \DB::select("select bbl.* from 
+        /*$data = \DB::select("select bbl.* from 
         believe_book bb 
         inner join believe_book_language bbl on bb.id =bbl.book_id 
         inner join believe_chapter bc  on bb.id =bc.book_id 
@@ -22,8 +22,17 @@ class ChapterController extends Controller
         where upper(bl.code_iso) = upper(IFNULL('$code_iso' ,bl.code_iso)) and
         bb.book_order = IFNULL('$book',bb.book_order) and bc.chapter = IFNULL('$chapter',bc.chapter)
             "
+        );*/
+        $data = \DB::select("SELECT br.* , 
+        bb.book_order as book,
+        br.start_chapter as chapter 
+         FROM
+         bhp.bible_read br 
+         inner join bhp.believe_book bb on bb.id=br.book_id
+         where 
+         start_date = '$start_date' "
         );
-        $return['results']=$data;
+        $return=$data;
         return  \Response::json($return, 201); // Status code here
     }
 }
