@@ -31,7 +31,9 @@ class ChapterController extends Controller
          bhp.bible_read br 
          inner join bhp.believe_book bb on bb.id=br.book_id
          where 
-         start_date = '$start_date' "
+         bb.book_order = '$book' 
+         and bb.start_chapter = '$chapter'
+         "
         );
         $return=$data;
         return  \Response::json($return, 201); // Status code here
