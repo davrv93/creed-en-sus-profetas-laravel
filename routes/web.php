@@ -26,5 +26,5 @@ Route::get('cep/api/believe/bible_reading', 'BelieveController@reading');
 
 
 Route::get('filesd/lectura.pdf', function () {
-    return response()->file('/home/files/files/lectura.pdf');
+    return response()->file('/home/files/lectura.pdf');
 });
