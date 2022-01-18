@@ -42,7 +42,7 @@ class SpiritProphecyController extends Controller
       
         $return=[
             [
-                "archivo"=>'http://www.africau.edu/images/default/sample.pdf'
+                "archivo"=>'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf'
             ]
         ];
         return  \Response::json($return,
