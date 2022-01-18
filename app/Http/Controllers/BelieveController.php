@@ -24,4 +24,19 @@ class BelieveController extends Controller
         $return['results']=$data;
         return  \Response::json($return, 201); // Status code here
     }
+
+    public function reading(Request $request){
+        $start_date = $request->start_date?$request->start_date:'';
+
+        $return = array();
+        $data = \DB::select("SELECT * FROM
+         bhp.bible_read br 
+         where 
+         start_date = '$start_date' "
+        );
+        $return['results']=$data;
+        return  \Response::json($return, 201); // Status code here
+
+        
+    }
 }
