@@ -42,7 +42,7 @@ class SpiritProphecyController extends Controller
       
         $return=[
             [
-                "archivo"=>'http://198.199.78.59:9000/media/SC%20cap%201a%20Primera%20semana%2016%20enero%202022.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=18IK434ZR5LHPYRAMTAW%2F20220118%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220118T171148Z&X-Amz-Expires=604800&X-Amz-Security-Token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiIxOElLNDM0WlI1TEhQWVJBTVRBVyIsImV4cCI6MTY0MjUyOTQ4MywicGFyZW50IjoiQUtJQUlPU0ZPRE5ON0VYQU1QTEUifQ.wP3c270SyIq6KTWJfZqsRNglNN9SmeDevCzRiBRYhVf0oP5HW9_jmQWb5ALBPiXYoRRFm1OhRz1WXGShJYyWYw&X-Amz-SignedHeaders=host&versionId=null&X-Amz-Signature=9d64496f215aa8d3082d1a86f83846a494724d2136dc26950354b80235269dc0'
+                "archivo"=>'http://pastorroncal.com:9000/media/SC%20cap%201a%20Primera%20semana%2016%20enero%202022.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=18IK434ZR5LHPYRAMTAW%2F20220118%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220118T171148Z&X-Amz-Expires=604800&X-Amz-Security-Token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiIxOElLNDM0WlI1TEhQWVJBTVRBVyIsImV4cCI6MTY0MjUyOTQ4MywicGFyZW50IjoiQUtJQUlPU0ZPRE5ON0VYQU1QTEUifQ.wP3c270SyIq6KTWJfZqsRNglNN9SmeDevCzRiBRYhVf0oP5HW9_jmQWb5ALBPiXYoRRFm1OhRz1WXGShJYyWYw&X-Amz-SignedHeaders=host&versionId=null&X-Amz-Signature=9d64496f215aa8d3082d1a86f83846a494724d2136dc26950354b80235269dc0'
             ]
         ];
         return  \Response::json($return,
