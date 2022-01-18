@@ -24,7 +24,3 @@ Route::get('believe/chapters', 'ChapterController@index');
 Route::get('believe/verses', 'VerseController@index');
 Route::get('believe/spirit_prophecy_chapter', 'SpiritProphecyController@index');
 
-
-Route::get('files/lectura.pdf', function () {
-    return response()->file('var/www/html/public/files/lectura.pdf');
-});

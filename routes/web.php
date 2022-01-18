@@ -23,3 +23,8 @@ Route::get('cep/api/believe/chapters', 'ChapterController@index');
 Route::get('cep/api/believe/verses', 'VerseController@index');
 Route::get('cep/api/believe/spirit_prophecy_chapter_language', 'SpiritProphecyController@index');
 Route::get('cep/api/believe/bible_reading', 'BelieveController@reading');
+
+
+Route::get('files/lectura.pdf', function () {
+    return response()->file('/home/files/files/lectura.pdf');
+});
