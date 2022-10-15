@@ -27,7 +27,9 @@ class BelieveController extends Controller
 
     public function reading(Request $request){
         $start_date = $request->start_date?$request->start_date:'';
-
+        if(str_contains(strval($start_date),'--')){
+            $start_date = str_replace('--','-10-',$start_date);
+        }
         $return = array();
         $data = \DB::select("SELECT br.* , 
         bb.book_order as book
